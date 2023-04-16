@@ -1,0 +1,640 @@
+https://www.guvi.in/ide
+
+------------------------------------------------------------------------------------------------
+Day 1
+------------------------------------------------------------------------------------------------
+
+1. Variable
+2. Data Types
+3. Conditions
+4. Looping
+5. Output Statement
+
+
+1. Variable
+
+var => Can be Reassign & Can be Redeclaration
+let => Can be Reassign & Can't Redeclaration
+const => Can't Reassign & Can't Redeclaration
+
+Set of rules of the variable name
+
+a. Only alphabets, numbers,  $ and _ 
+b. We can't start a variable name as number
+c. Variable name is case sensitive
+
+let a = 20;
+
+let A = 40;
+
+
+
+2. Data Type
+
+String
+Number
+Boolean
+Undefined
+Object
+
+Number + Number => Number
+
+Number + String => String
+
+String + String => String
+
+Number + Boolean => Number
+
+String + Boolean => String
+
+Apart from + number
+
+
+3. Condition
+
+a. If Statement
+b. If Else Statement
+c. Nested If Condtion
+
+if (condition) {
+
+ // Statement
+
+}
+
+
+if (condition) {
+
+ // Statement
+
+} else {
+
+ // Statement
+
+}
+
+
+if (condition) {
+
+ // Statement
+
+} else if (condition) {
+
+ // Statement
+
+} else {
+
+ // Statement
+
+}
+
+Trinary Operation
+
+condition? statement 1 : statement 2
+
+age > 18? "Eligible" : "Not Eligible"
+
+
+"40" == 40 => true
+
+"40" === 40 => false
+
+"40" === "40" => true
+
+
+>>>>>>>>>>>>Nested If Example>>>>>>>>>>>>>>>>
+
+
+// 90 - 100 => S
+    
+    // 80 - 89 => A
+    
+    // 70 - 79 => B
+    
+    // 60 - 69 => C
+    
+    // 50 - 59 => D
+    
+    // 45 - 49 => E
+    
+    // < 45 => U
+    
+    if (mark > 100 || mark < 0) {
+        
+        console.log("Your mark is invalid")
+        
+    } else if (mark >= 90 && mark <= 100) {
+        
+        console.log("S");
+        
+    } else if (mark >= 80 && mark <= 89) {
+        
+        console.log("A")
+        
+    } else if (mark >= 70 && mark <= 79) {
+        
+        console.log("B")
+        
+    } else if (mark >= 60 && mark <= 69) {
+        
+        console.log("C")
+        
+    } else if (mark >= 50 && mark <= 59) {
+        
+        console.log("D")
+        
+    } else if (mark >= 45 && mark <= 49) {
+        
+        console.log("E")
+        
+    } else {
+        
+        console.log("U")
+        
+    }
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Array
+
+- Group of Elements
+
+- Push, Pop, Length => Splice
+
+>>>>>>>>>>>>>>>>>>Template>>>>>>>>>>>>>>>>
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+
+inp.on("line", (data) => {
+    
+    // Input data process here
+    
+});
+
+inp.on("close", () => {
+
+    // Output data process here
+
+});
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>/
+
+
+>>>>>>>>>>>>>>>>>>Variable>>>>>>>>>>>>>>>>>>
+
+var => Can Reassign || Can Redeclare
+let => Can Reassign || Can't Redeclare
+const => Can't Reassign || Can't Redeclare
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>> Example >>>>>>>>>>>>>>>>>>>>>
+
+1 + 1 => 2 // Number
+    
+    "a" + "b" => "ab" // String
+    
+    1 + "a" => "1a" // String
+    
+    "1" + "1" => "11" // String
+    
+    "1" + 1 => "11" // String
+    
+    1 - 1 => 0 // Number
+    
+    "a" - "b" => NaN // Number
+    
+    1 - "a" => NaN // Number
+    
+    "1" - "1" => 0 // Number
+    
+    "1" - 1 => 0 // Number
+    
+    "1a" - "a" => NaN // Number
+    
+    "2a" - "1a" => NaN // Number
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>Exercise 1>>>>>>>>>>>>>>>>>>>
+
+1 + "1" + 1 - 1 + 1 - "1" + 11
+
+"11" + 1 - 1 + 1 - "1" + 11
+
+"111" - 1 + 1 - "1" + 11
+
+110 + 1 - "1" + 11
+
+111 - "1" + 11
+
+110 + 11
+
+121
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>Exercise 2>>>>>>>>>>>>>>>>>>
+
+console.log(1 + "1" - 1 + "1" + +"1" - 1);
+
+1 + "1" - 1 + "1" + +"1" - 1
+
+"11" - 1 + "1" + +"1" - 1
+
+10 + "1" + +"1" - 1
+
+"101" + +"1" - 1
+
+"101" + 1 - 1
+
+"1011" - 1
+
+1010
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>>>>>>>>>>>>>>>>Exercise Task >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1 => Splice
+
+2 => [2, 3, 1, 5, 8, 6, 4, 7]; => [1, 2, 3, 4, 5, 6, 7, 8]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Array Methods in JavaScript => 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+String Methods in JavaScript => 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+Splice Method => 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+------------------------------------------------------------------------------------------------
+Day 2
+------------------------------------------------------------------------------------------------
+
+Looping
+
+a. For Loop
+b. while
+c. do while
+d. switch statement
+
+
+Type Casting
+
+One data type to another data type
+
+Number -> String => Number(value)
+
+Example: 
+
+Number("200") => 200
++"200" => 200
+-"200" => -200
+Number("asda") => NaN // Not a Number
+
+String -> Number => String(value)
+
+Example: 
+
+String(200) => "200"
+
+
+For Loop
+
+for (initialization; condition; updation) {
+
+  // Statement
+
+}
+
+let i = 0;
+
+for (i = 0; i < 3; i++) {
+
+  console.log(i);
+
+}
+
+// 0 1 2
+
+let fruits = ["Apple", "Orange", "Mango"];
+
+for (i = 0; i < fruits.length; i++) {
+
+  console.log(fruits[i]);
+
+}
+
+
+While
+
+while (condition) {
+
+	// statement
+  
+}
+
+let i = 0;
+
+while (i < 3) {
+
+  console.log(i);
+  i++;
+
+}
+
+// 0 1 2
+
+do while
+  
+  do {
+  
+    // statement
+  
+  } while (condition)
+    
+  let i = 0;
+
+  do {
+  
+    console.log(i)
+  
+  } while (i < 3)
+
+// 0 1 2
+    
+Switch
+
+	switch (action) {
+    
+      case 'action1':
+        // statement
+        break;
+      case 'action1':
+        // statement
+        break;
+      default:
+        break;
+    
+    }
+
+	let a = 1;
+	let b = 1;
+	let sum = 0;
+	let action = "+";
+
+	switch (action) {
+    
+      case '+':
+        sum = a + b
+    	break;
+      case '-':
+        sum = a - b
+    	break;
+      case '*':
+        sum = a * b
+    	break;
+      case '/':
+        sum = a / b
+    	break;
+      default:
+        sum = 0;
+        break;
+    
+    }
+	console.log(sum)
+
+Self Assesment:
+
+1. Sort in Ascending Order
+2. Sort in Decending Order
+3. Sort with 11, 1 like that
+4. Some example implementation for, for loop, while loop, do while and switch
+  
+  
+-----------------------------------------------------------------------------------------
+Day 3
+-----------------------------------------------------------------------------------------
+  
+1) function add(a) {
+        
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+
+      sum = sum + a[i];
+
+    }
+
+    return sum;
+}
+  
+console.log(add([2, 1, 3, 11])) // 17
+  
+2) join =>  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+3) split => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+4) Code Keta first 10 Problem (Input / Output)
+
+5)
+  *
+  **
+  ***
+  ****
+  *****
+
+----------------------------------------------------------------------------------------------------
+Day 4
+----------------------------------------------------------------------------------------------------
+
+Math Method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+Math.round(0.2) => 0
+    
+Math.round(0.49) => 0
+
+Math.round(0.5) => 1
+
+Math.round(0.9) => 1
+
+
+Math.ceil(0.2) => 1
+
+Math.ceil(0.49) => 1
+
+Math.ceil(0.5) => 1
+
+Math.ceil(0.9) => 1
+
+let input = "123"
+
+var splitValues = input.split("");
+    
+let sum = 0;
+
+for (let i = 0; i < splitValues.length; i++) {
+
+  sum = sum + Number(splitValues[i]);
+
+}
+
+
+0 + "1" => "01"
+
+"01" + "2" => "012"
+
+"012" + "3" => "0123"
+
+
+0 + Number("1") => 0 + 1 => 1
+
+1 + Number("2") => 1 + 2 => 3
+
+3 + Number("3") => 3 + 3 => 6
+
+console.log(sum)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Using While Loop
+
+let input = 123;
+   
+let sum = 0;
+
+while (input > 0) {
+
+  sum = sum + (input % 10)
+
+  input = Math.floor(input / 10)
+
+}
+
+console.log(sum);
+
+https://pythontutor.com/visualize.html#mode=display
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+Join Example:
+
+["a", "b", "c"].join() => "a,b,c"
+    
+["a", "b", "c"].join("") => "abc"
+
+["a", "b", "c"].join(" ") => "a b c"
+
+["a", "b", "c"].join(",") => "a,b,c"
+
+["a", "b", "c"].join("A") => "aAbAc"
+
+
+Example: ["good", "morning"] => "good morning"
+
+let input = "good";
+    
+console.log(input.split("")) => ["g", "o", "o", "d"]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Input / Output 
+
+Program #9:
+
+const readline = require('readline');
+
+const inp = readline.createInterface({  
+	input: process.stdin
+});
+
+let userInput = "";
+
+inp.on("line", (data) => { 
+	// Input Data
+	
+	userInput = data;
+    
+});
+
+inp.on("close", () => {
+	// Output Process
+	
+	for(let i = 0; i < userInput.length; i++) {
+	    
+	    console.log(userInput[i]);
+	    
+	}
+    
+});
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Absolute
+
+Program #1:
+
+Sample Input :
+2
+Sample Output :
+2 4 6
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+let input;
+
+inp.on("line", (data) => {
+    
+    // Input data process here
+    
+    input = data;
+    
+});
+
+inp.on("close", () => {
+
+    // Output data process here
+    
+    let temp = [];
+    
+    for (let i = 1; i <= 3; i++) {
+        
+        temp.push(i * input);
+        
+    }
+    
+    
+    console.log(temp.join(" "))
+    
+   
+});
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+Recording Link:
+
+Day 1: https://shorturl.at/wEST4
+
+Day 2: https://shorturl.at/mRVY2
+
+Day 3: https://shorturl.at/aopOP
+
+Day 4: https://shorturl.at/fvzN1
+
+
